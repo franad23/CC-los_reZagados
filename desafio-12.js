@@ -6,6 +6,7 @@ export const procesarTexto = (texto, comandos) => {
   let newPhrase = '';
   for (let index = 0; index < comandos.length; index++) {
     const element = comandos[index].toUpperCase();
+    // newFunction[element] es una propiedad de los objetos de funciones
     if(newFunction[element]){
       if(element =='AGREGA'){
         let key = prompt('Ingrese una letra para agregar');
