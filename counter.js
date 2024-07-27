@@ -1,3 +1,5 @@
+import { procesarTexto } from './desafio-12';
+
 export function setupCounter(element) {
   let counter = 0;
   const setCounter = (count) => {
@@ -7,3 +9,4 @@ export function setupCounter(element) {
   element.addEventListener('click', () => setCounter(counter + 1));
   setCounter(0);
 }
+procesarTexto('holu',['INTERCAMBIA','DUP','AGREGA','AGREGA']);
