@@ -8,9 +8,7 @@ function divisores (a){
     return suma; 
 }
 function sonAmigable(num1, num2){
-    const resultado_1 = divisores(num1); 
-    const resultado_2 = divisores(num2); 
-    return num1 === resultado_2 && num2 === resultado_1; 
+    return num1 === divisores(num2) && num2 === divisores(num1); 
 }
 
 
