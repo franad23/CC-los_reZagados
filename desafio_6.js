@@ -1,5 +1,8 @@
 
 function combinaciones (cadena){
+  if(typeof cadena !== 'string') return console.log('El valor ingresado no es una cadena');
+  
+
 const cadenaAArray = [];
 
 for (let i = 0; i < cadena.length; i++) {
