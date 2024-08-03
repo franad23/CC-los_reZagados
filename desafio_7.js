@@ -1,5 +1,5 @@
 const palabras = ["casa", "perro", "gato", "elefante", "pez"];
-const n = 4;
+const n = '4';
 
 
 function juegoDePalabras (arr,n){
@@ -11,7 +11,7 @@ function juegoDePalabras (arr,n){
     if (typeof i !== 'string') return console.log(`El valor ${i} no es un string`);
   }
   if(!n) return console.log('No se ingreso un numero');
-  if(typeof n !== 'number') return console.log('El valor ingresado no es un nmero');
+  if(typeof n !== 'number') return console.log('El valor ingresado no es un número');
   if(n <= 0) return console.log('El número debe ser mayor a 0');
 
 
