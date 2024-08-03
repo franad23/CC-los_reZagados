@@ -1,4 +1,5 @@
 const validacionDeParentesis = (cadena) => {
+
   let pila = []
   for(let i = 0; i < cadena.length; i++){
       if(cadena[i] === '('){
