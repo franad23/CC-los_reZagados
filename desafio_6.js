@@ -1,7 +1,7 @@
 
 function combinaciones (cadena){
   if(typeof cadena !== 'string') return console.log('El valor ingresado no es una cadena');
-  
+
 
 const cadenaAArray = [];
 
@@ -21,13 +21,12 @@ console.log(cadenaAArray)
     '9':['w','x','y','z']
   };
 
-let resultadoParcial = data[cadenaAArray[0]]
+let resultado = data[cadenaAArray[0]]
 
 for (let i = 1; i < cadenaAArray.length; i++) {
-  resultadoParcial = haceCombinaciones(resultadoParcial, data[cadenaAArray[i]])
+  resultado = haceCombinaciones(resultado, data[cadenaAArray[i]])
 }
-console.log(resultadoParcial)
-
+return resultado;
 }
 
 function haceCombinaciones (arr1, arr2){
@@ -40,4 +39,4 @@ function haceCombinaciones (arr1, arr2){
   }
   return resultado;
 }
-console.log(combinaciones('2345'))
+console.log(combinaciones('2345')) 

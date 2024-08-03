@@ -24,4 +24,4 @@ function juegoDePalabras (arr,n){
 
 };
 
-console.log(juegoDePalabras(palabras,n))
+console.log(juegoDePalabras(palabras,4))
